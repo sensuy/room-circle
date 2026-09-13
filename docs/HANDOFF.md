@@ -68,7 +68,7 @@ The default root dev:web command may choose Vite's default port 5173. Use the ex
 The Codex session repeatedly had broken sandbox launch support and required approved shell execution. Its working directory also sometimes contained a malformed Windows path. Explicitly set workdir to the project.
 Direct editing sometimes reported nonexistent Linux paths even though shell reads worked. Running env apply_patch through an approved shell with explicit Linux paths succeeded. Do not mistake these failures for absent project files.
 
-Git was initialized on main on September 13 with user authorization. The origin remote is git@github.com:sensuy/room-circle.git. The remote was empty when inspected. The initial commit and push are being prepared; verify the current Git state when resuming. No PR has been created.
+Git was initialized on main on September 13 with user authorization. The origin remote is git@github.com:sensuy/room-circle.git. Initial commit d3074d9 was pushed successfully; main tracks origin/main. No PR has been created. Root ignore rules exclude local environment files, dependencies, build output, TypeScript build caches, test reports and common temporary files; .env.example is tracked with placeholder credentials only. No build or test suite was rerun for this Git setup.
 .gitignore excludes local .env files; do not copy credentials into docs.
 Some dependency installations reported audit findings; later installs changed the graph again. Do not claim the current dependency tree is clean without a fresh audit.
 
