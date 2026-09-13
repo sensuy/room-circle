@@ -1,0 +1,11 @@
+.registration { max-width: 460px; margin: 48px auto; padding: 32px; background: white; border: 1px solid #d9e4df; border-radius: 16px; }
+.brand { color: #21644f; font-weight: 750; }
+h1 { font-size: 28px; }
+p { line-height: 1.6; }
+label { display: grid; gap: 8px; margin: 20px 0; font-weight: 600; }
+input { box-sizing: border-box; width: 100%; padding: 12px; font: inherit; border: 1px solid #8fa69a; border-radius: 6px; }
+[role=alert] { color: #a12e26; }
+button { width: 100%; padding: 14px; background: #21644f; color: white; border: 0; border-radius: 6px; font: inherit; cursor: pointer; }
+button:disabled { opacity: .6; cursor: wait; }
+input:focus-visible, button:focus-visible { outline: 3px solid #51a98a; outline-offset: 3px; }
+@media (max-width: 540px) { .registration { margin: 16px; padding: 24px; } }

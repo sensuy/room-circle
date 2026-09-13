@@ -1,0 +1,27 @@
+{
+  "name": "room-circle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "dev:web": "npm run dev --workspace @room-circle/web",
+    "dev:api": "npm run db:migrate && npm run start:dev --workspace @room-circle/api",
+    "lint": "npm run lint --workspaces --if-present",
+    "db:migrate": "node --env-file=.env node_modules/prisma/build/index.js migrate deploy --config apps/api/prisma.config.ts",
+    "db:generate": "node --env-file=.env node_modules/prisma/build/index.js generate --config apps/api/prisma.config.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=24.15.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
